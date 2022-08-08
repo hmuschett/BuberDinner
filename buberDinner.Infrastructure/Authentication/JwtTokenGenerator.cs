@@ -6,6 +6,7 @@ using buberDinner.Application.Common.Interfaces.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using buberDinner.Application.Common.Interfaces.Services;
 using Microsoft.Extensions.Options;
+using buberDinner.Domain.Entities;
 
 namespace buberDinner.Infrastructure.Authentication;
 public class JwtTokenGenerator : IJwtTokenGenerator
@@ -19,16 +20,16 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         _jwtSetting = jwtOptions.Value;
     }
 
-    public string GeneratorToken(Guid userId, string firstName, string lastName)
+    public string GeneratorToken(User user)
     {
         var singingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSetting.Secret)),
             SecurityAlgorithms.HmacSha256);
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
-            new Claim(JwtRegisteredClaimNames.GivenName, firstName ),
-            new Claim(JwtRegisteredClaimNames.FamilyName, lastName ),
+            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+            new Claim(JwtRegisteredClaimNames.GivenName, user.FirstName ),
+            new Claim(JwtRegisteredClaimNames.FamilyName, user.LastName ),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
        var securityToken = new JwtSecurityToken(
