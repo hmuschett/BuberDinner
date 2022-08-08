@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "GamOKuUAIvQlVGquiiGVABeoM5RuKfVny/ZiH3JfcBWupDdLObUr5RGwJy98b/ncc0A0fZKC9jWr0RhurLZriA==",
+  "success": true,
+  "projectFilePath": "d:\\proyects\\learnig\\NetCore\\buberDinner\\buberDinner.Api\\buberDinner.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0-preview.6.22324.4\\microsoft.extensions.configuration.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0-preview.6.22324.4\\microsoft.extensions.configuration.abstractions.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0-preview.6.22324.4\\microsoft.extensions.configuration.binder.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-preview.6.22324.4\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.options\\7.0.0-preview.6.22324.4\\microsoft.extensions.options.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0-preview.6.22324.4\\microsoft.extensions.options.configurationextensions.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0-preview.6.22324.4\\microsoft.extensions.primitives.7.0.0-preview.6.22324.4.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.22.0\\microsoft.identitymodel.abstractions.6.22.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.22.0\\microsoft.identitymodel.jsonwebtokens.6.22.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.identitymodel.logging\\6.22.0\\microsoft.identitymodel.logging.6.22.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.22.0\\microsoft.identitymodel.tokens.6.22.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.22.0\\system.identitymodel.tokens.jwt.6.22.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\henry\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

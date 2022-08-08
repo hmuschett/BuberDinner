@@ -1,0 +1,12 @@
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\bin\Debug\net6.0\buberDinner.Domain.deps.json
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\bin\Debug\net6.0\buberDinner.Domain.dll
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\bin\Debug\net6.0\buberDinner.Domain.pdb
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.csproj.AssemblyReference.cache
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.AssemblyInfoInputs.cache
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.AssemblyInfo.cs
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.csproj.CoreCompileInputs.cache
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.dll
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\refint\buberDinner.Domain.dll
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\buberDinner.Domain.pdb
+D:\proyects\learnig\NetCore\buberDinner\buberDinner.Domain\obj\Debug\net6.0\ref\buberDinner.Domain.dll
