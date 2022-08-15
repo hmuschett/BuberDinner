@@ -1,3 +1,4 @@
+using buberDinner.Application.Common.Errors;
 using buberDinner.Application.Common.Interfaces.Authentication;
 using buberDinner.Application.Common.Interfaces.Persistence;
 using buberDinner.Domain.Entities;
@@ -20,7 +21,7 @@ public class AuthenticationService : IAuthenticationService
         //Check is user already exist
         if (_userRepository.GetUserByEmail(email) is not null)
         {
-            throw new Exception("user with given email already exists");
+            throw new DuplicateEmailException();
         }
         //Create user (Generate unique Id) & persistence
         var user = new User{
@@ -35,8 +36,9 @@ public class AuthenticationService : IAuthenticationService
         //Create JWT Token        
         var token = _jwtTokenGenerator.GeneratorToken(user);
 
-         return new AuthenticationResult(user,
-                                         token);
+         return new AuthenticationResult(
+             user,
+             token);
     }
     public AuthenticationResult Login(string email, string password)
     {

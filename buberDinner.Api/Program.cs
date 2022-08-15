@@ -11,8 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
     builder.Services.AddControllers();
-    //builder.Services.AddControllers()(options => options.Filters.Add<ErrorHandlingFilterAttribute>()); this is to 
-    //manage exception error using filter 
+    /*builder.Services.AddControllers()(options => options.Filters.Add<ErrorHandlingFilterAttribute>()); this is to 
+    manage exception error using filter*/
 }
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 // builder.Services.AddEndpointsApiExplorer();
