@@ -1,5 +1,3 @@
-using buberDinner.Api.Filters;
-using buberDinner.Api.Middleware;
 using buberDinner.Application;
 using buberDinner.Infrastructure;
 

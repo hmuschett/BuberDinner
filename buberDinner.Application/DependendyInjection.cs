@@ -1,6 +1,3 @@
-
-using buberDinner.Application.Services.Authentication.Commands;
-using buberDinner.Application.Services.Authentication.Queries;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
