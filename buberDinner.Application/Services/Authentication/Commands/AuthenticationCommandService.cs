@@ -42,5 +42,4 @@ public class AuthenticationCommandService : IAuthenticationCommandService
              user,
              token);
     }
-   
 }
