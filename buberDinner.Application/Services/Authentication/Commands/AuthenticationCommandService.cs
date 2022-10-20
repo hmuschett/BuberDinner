@@ -3,15 +3,16 @@ using buberDinner.Application.Common.Interfaces.Authentication;
 using buberDinner.Application.Common.Interfaces.Persistence;
 using buberDinner.Domain.Entities;
 using ErrorOr;
+using buberDinner.Application.Services.Authentication.Common;
 
-namespace buberDinner.Application.Services.Authentication;
+namespace buberDinner.Application.Services.Authentication.Commands;
 
-public class AuthenticationService : IAuthenticationService
+public class AuthenticationCommandService : IAuthenticationCommandService
 {
     private readonly IJwtTokenGenerator _jwtTokenGenerator;
     private readonly IUserRepository _userRepository;
 
-    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository = null)
+    public AuthenticationCommandService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository = null)
     {
         _jwtTokenGenerator = jwtTokenGenerator;
         _userRepository = userRepository;
@@ -41,23 +42,5 @@ public class AuthenticationService : IAuthenticationService
              user,
              token);
     }
-    public ErrorOr<AuthenticationResult> Login(string email, string password)
-    {
-        // Validate the user exists
-        if ( _userRepository.GetUserByEmail(email) is not User user)
-        {
-           return Errors.Authentication.InvalidCredentials;
-        }
-        //Validate the password is correct 
-        if(user.Password != password)
-        {
-            return Errors.Authentication.InvalidCredentials;
-        }
-        //Create JWT token
-        var token = _jwtTokenGenerator.GeneratorToken(user);
-
-        return new AuthenticationResult(
-            user,
-            token);
-    }
+   
 }

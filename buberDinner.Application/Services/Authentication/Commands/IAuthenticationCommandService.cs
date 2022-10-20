@@ -1,13 +1,12 @@
+using buberDinner.Application.Services.Authentication.Common;
 using ErrorOr;
 
-namespace buberDinner.Application.Services.Authentication;
+namespace buberDinner.Application.Services.Authentication.Commands;
 
-public interface IAuthenticationService
+public interface IAuthenticationCommandService
 {
     ErrorOr<AuthenticationResult> Register(string FirstName,
                                   string LastName,
                                   string Email,
                                   string Password);
-    ErrorOr<AuthenticationResult>  Login(string Email,
-                               string Password);
 }
