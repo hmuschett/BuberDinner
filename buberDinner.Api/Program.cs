@@ -1,3 +1,4 @@
+using buberDinner.Api;
 using buberDinner.Application;
 using buberDinner.Infrastructure;
 
@@ -6,9 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 {
     builder.Services
+        .AddPresentation()
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-    builder.Services.AddControllers();
     /*builder.Services.AddControllers()(options => options.Filters.Add<ErrorHandlingFilterAttribute>()); this is to 
     manage exception error using filter*/
 }

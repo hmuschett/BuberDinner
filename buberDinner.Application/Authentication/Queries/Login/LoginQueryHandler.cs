@@ -13,13 +13,14 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, ErrorOr<Authenticat
     private readonly IUserRepository _userRepository;
 
     public LoginQueryHandler(IUserRepository userRepository,
-                                  IJwtTokenGenerator jwtTokenGenerator = null)
+                                  IJwtTokenGenerator jwtTokenGenerator)
     {
         _userRepository = userRepository;
         _jwtTokenGenerator = jwtTokenGenerator;
     }
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
+        await Task.CompletedTask;
        // Validate the user exists
         if ( _userRepository.GetUserByEmail(query.Email) is not User user)
         {
